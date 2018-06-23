@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="http://www.homeone.com.vn" title="HÀNG CHÍNH HÃNG GIÁ RẺ"  description="Home page">
+    <siteMapNode url="http://homeone.com.vn/san-pham/dien-thoai/dt-di-dong" title="Điện thoại di động"  description="ĐTDĐ, Điện thoại di động" />
+    <siteMapNode url="" title=""  description="" />
+  </siteMapNode>
+</siteMap>

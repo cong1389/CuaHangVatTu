@@ -1,0 +1,120 @@
+﻿.range__values
+{
+    position: relative;
+    margin-top: 20px;
+    color: #928c91;
+}
+
+.hp__popup__table TD
+{
+    vertical-align: middle;
+    padding: 20px;
+}
+
+.hp__popup__inner
+{
+    position: relative;
+    display: inline-block;
+    max-width: 900px;
+    text-align: left;
+    box-shadow: 0 2px 24px rgba(0,0,0,0.3);
+    margin: 0 auto;
+}
+
+.range__content
+{
+    padding: 10px;
+}
+.component-range
+{
+    position: relative;
+    background: #f5f3f4;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    border-radius: 5px;
+}
+
+.hp__popup__table
+{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.hidden
+{
+    display: none;
+}
+.range__title
+{
+    color: #244a61;
+    text-transform: uppercase;
+    padding: 0 0 0 15px;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+.range__slider
+{
+    position: relative;
+    height: 5px;
+    border: 1px solid #928c91;
+    border-radius: 5px;
+    background: #fff;
+}
+.range__slider__left, .range__slider__right
+{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    margin-top: 1px;
+    background: url("../Images/icon-71ae3.png") no-repeat 0 0;
+    vertical-align: text-top;
+    display: inline-block;
+    width: 11px;
+    height: 16px;
+    background-position: 0 -6752px;
+    cursor: pointer;
+    transition: all .2s linear;
+    transition-property: -webkit-transform,-webkit-transform;
+    transition-property: -webkit-transform,transform;
+}
+
+.range__button:after
+{
+    content: ' ';
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-left: 12px solid #fff;
+    border-bottom: 7px solid transparent;
+    padding: 0;
+    line-height: 0;
+    position: absolute;
+    top: 9px;
+    left: 2px;
+}
+.range__values .range__button
+{
+    position: absolute !important;
+    right: 6px;
+    line-height: 27px;
+    text-align: center;
+    border: 1px solid #007dc6;
+    background: #007dc6;
+    width: 60px !important;
+    height: 28px;
+    font-weight: bold;
+    color: #fff;
+}
+.range__values__from, .range__values__to
+{
+    width: 45px;
+    color: #000;
+    padding: 0 0px;
+    height: 30px;
+    line-height: 30px; /* margin: 0 1px 0 0; */ /*
+	border: 1px solid #928c91; 
+    text-align: center;
+}

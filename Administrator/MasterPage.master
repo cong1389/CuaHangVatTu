@@ -1,0 +1,113 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="Administrator_MasterPage" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="Styles/admin.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/ModalPopup.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../assets/global/design/plugins/jquery/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../Administrator/Scripts/scriptcustom.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+        function ChangPwdClick() {
+            $get("cmdChangPwd").click();
+        }
+    </script>
+</head>
+<body style="background: #f5f5f5;">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+        </asp:ScriptManager>
+        <div>
+            <div class="header">
+                <div class="adv">
+                    <table width="100%">
+                        <tr>
+                            <td rowspan="2" style="width: 200px;">
+                                <img src="<%=GetURL()+ "Images/logo.jpg"%>" width="100" alt="adv! Logo"></td>
+                            <td>
+                                <table width="100%">
+                                    <tr>
+                                        <td><b><a href="Default.aspx">Trang chủ</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#" onclick="ChangPwdClick(); return false;">Đổi mật khẩu</a> |&nbsp;&nbsp;<a href="Logout.aspx">Thoát</a></b></td>
+                                        <td align="right">
+                                            <asp:Label ID="LblMasterMenu" runat="server" Text=""></asp:Label></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" align="center" valign="bottom" style="height: 40px;">
+                                            <b>
+                                                <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                                                    <Triggers>
+                                                        <asp:AsyncPostBackTrigger ControlID="cmdOKChangePwd" EventName="Click" />
+                                                    </Triggers>
+                                                    <ContentTemplate>
+                                                        <asp:Label ID="LblMasterMenuDescription" runat="server" Text="" CssClass="MasterDescription"></asp:Label>
+                                                    </ContentTemplate>
+                                                </asp:UpdatePanel>
+                                            </b>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+            <asp:ContentPlaceHolder ID="maincontent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div style="display: none;">
+            <asp:Button ID="cmdChangPwd" runat="server" Text="" />
+        </div>
+
+        <asp:ModalPopupExtender ID="ModalPopupExtenderPwd" runat="server" BackgroundCssClass="modalBackground"
+            TargetControlID="cmdChangPwd" PopupControlID="PanelChangePwd" OkControlID="cmdCancelChangePwd">
+        </asp:ModalPopupExtender>
+        <asp:Panel ID="PanelChangePwd" runat="server" Style="display: none; height: 280px; width: 400px; background: #fff;" CssClass="popup">
+            <asp:UpdatePanel ID="UpdatePanel2" runat="server">
+                <ContentTemplate>
+                    <div class="popupheader" style="height: 20px;">
+                        <b>Đổi mật khẩu</b>
+                    </div>
+                    <div style="padding-top: 5px; padding-left: 20px; margin-top: 10px;">
+                        Mật khẩu cũ
+                    </div>
+                    <div style="padding-left: 20px;">
+                        <asp:TextBox ID="TxtOldPwd" runat="server" Width="300px" TextMode="Password"></asp:TextBox>
+                    </div>
+                    <div style="padding-top: 10px; padding-left: 20px;">
+                        Mật khẩu mới
+                    </div>
+                    <div style="padding-left: 20px;">
+                        <asp:TextBox ID="TxtNewPwd" runat="server" Width="300px" TextMode="Password"></asp:TextBox>
+                    </div>
+                    <div style="padding-top: 10px; padding-left: 20px;">
+                        Xác nhận
+                    </div>
+                    <div style="padding-left: 20px;">
+                        <asp:TextBox ID="TxtConfirmPwd" runat="server" Width="300px" TextMode="Password"></asp:TextBox>
+                    </div>
+
+                    <div style="padding-left: 20px; height: 40px;">
+                        <asp:Label ID="LblErr" runat="server" Text="" class="requirement"></asp:Label>
+                    </div>
+                    <div>
+                        <center>
+                        <asp:Button ID="cmdOKChangePwd" runat="server" Text="Đổi mật khẩu" Cssclass="button"></asp:Button>
+                        <asp:Button ID="cmdCancelChangePwd" runat="server" Text="Hủy" Cssclass="button"></asp:Button>
+                        </center>
+                    </div>
+                </ContentTemplate>
+            </asp:UpdatePanel>
+        </asp:Panel>
+
+    </form>
+</body>
+</html>

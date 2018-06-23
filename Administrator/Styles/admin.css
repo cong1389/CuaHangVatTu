@@ -1,0 +1,475 @@
+﻿/**
+* @version $Id: template_css.css 5857 2006-11-27 03:06:27Z rmdstudio $
+* @package Joomla
+* @copyright Copyright (C) 2005 Open Source Matters. All rights reserved.
+* @license http://www.gnu.org/copyleft/gpl.html GNU/GPL, see LICENSE.php
+* Joomla! is free software and parts of it may contain or be derived from works
+* licensed under the GNU General Public License or other free or open source
+* software licenses. See COPYRIGHT.php for copyright notices and details.
+*/
+
+html {
+	height: 100%;
+}
+body {
+	margin: 0px 0px 0px 0px;
+	color : #333;
+	background-color: #FFF;
+	font-family: wf_SegoeUI,Segoe UI, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+a
+{
+    color: #000099;
+    text-decoration: none;
+    outline: none;
+}
+a:hover
+{
+    color: #CC0000;
+    text-decoration: underline;
+}
+a:active {
+	color : #333333;
+	text-decoration : underline;
+}
+
+.button
+{
+    border: 1px solid #000;
+    width: 80px;
+    height: 22px;
+}
+
+.button:hover
+{
+    background-image: url('images/bgmn.jpg');
+    background-repeat: repeat-x;
+}
+
+.inputbox {
+	z-index: -3;
+	font-size: 11px;
+	height:20px;
+}
+.text_area {
+	border : 1px solid #ccc;
+	z-index: -3;
+	font-size: 11px;
+}
+input, textarea, select {
+	z-index : -3;
+	font-size: 11px;
+}
+
+
+table.adminlist {
+	background-color: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid #ddd;
+	border-spacing: 0px;
+	width: 100%;
+	border-collapse: collapse;
+}
+table.adminlist th
+{
+    margin: 0px;
+    padding: 6px 4px 2px 4px;
+    height: 25px;
+    background-image: url('images/bgmn.jpg');
+    background-repeat: repeat-x;
+    font-size: 11px;
+    color: #000;
+}
+table.adminlist th.title {
+	text-align: left;
+}
+table.adminlist th a:link, table.adminlist th a:visited {
+	color: #c64934;
+	text-decoration: none;
+}
+table.adminlist th a:hover {
+	text-decoration: underline;
+}
+table.adminlist tr.row0 {
+	background-color: #F9F9F9;
+	text-align: left;
+}
+table.adminlist tr.row1 {
+	background-color: #FFF;
+	text-align: left;
+}
+table.adminlist td {
+	border-bottom: 1px solid #e5e5e5;
+	padding: 0px;
+}
+table.adminlist tr.row0:hover {
+	background-color: #f1f1f1;
+}
+table.adminlist tr.row1:hover {
+	background-color: #f1f1f1;
+}
+table.adminlist td.options {
+	background-color: #ffffff;
+	font-size: 8px;
+}
+select.options, input.options {
+	font-size: 8px;
+	font-weight: normal;
+	border: 1px solid #999999;
+}
+/* standard form style table */
+table.adminform {
+	background-color: #f9f9f9;
+	border: solid 1px #d5d5d5;
+	width: 100%;
+	/*padding: 10px;*/
+	border-collapse: collapse;
+    height: 481px;
+}
+table.adminform tr.row0 {
+	background-color: #f9f9f9;
+}
+table.adminform tr.row1 {
+	background-color: #eeeeee;
+}
+table.adminform th {
+	font-size: 11px;
+	padding-top: 6px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	text-align: left;
+	height: 21px;
+	background: url(../images/background.jpg);
+	color: #000;
+	background-repeat: repeat;
+}
+table.adminform td {
+	padding: 3px;
+	text-align: left;
+}
+table.adminform td.title {
+	font-weight:bold;
+	text-align:right;
+}
+table.adminform td.editor {
+	font-size: 9px;
+}
+table.cpanel td {
+	text-align: center;
+	min-height: 400px;
+}
+form {
+	margin: 0px 0px 0px 0px;
+}
+/* Styles for dhtml tabbed-pages */
+.ontab {
+	font-size: 12px;
+	background-color: #ffae00;
+	border: 1px solid #cccccc;
+	width: 14%;
+	text-align: center;
+	cursor: pointer;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.offtab {
+	font-size: 12px;
+	background-color : #e5e5e5;
+	border: 1px solid #cccccc;
+	width: 14%;
+	text-align: center;
+	cursor: pointer;
+	font-weight: normal;
+}
+
+div.main {
+	width: 99%;
+	padding: 0;
+}
+.quote {
+	margin: 4px;
+	border: 1px solid #cccccc;
+	background-color: #E9ECEF;
+	padding: 10px;
+	font-size: 12px;
+	color: #254D78;
+}
+/* mod_quickicon */
+#cpanel {
+	text-align: center;
+	vertical-align: middle;
+}
+#cpanel div.icon {
+	margin: 3px;
+}
+#cpanel div.icon a {
+	display: block;
+	float: left;
+	height: 97px !important;
+	height: 100px;
+	width: 108px !important;
+	width: 110px;
+	vertical-align: middle;
+	text-decoration : none;
+	border: 1px solid #DDD;
+	padding: 2px 5px 1px 5px;
+}
+#cpanel div.icon a:link {
+	color : #808080;
+}
+#cpanel div.icon a:hover {
+	color : #333;
+	background-color: #f1e8e6;
+	border: 1px solid #c24733;
+	padding: 3px 4px 0px 6px;
+}
+#cpanel div.icon a:active {
+	color : #808080;
+}
+#cpanel div.icon a:visited {
+	color : #808080;
+}
+#cpanel div.icon img {
+	margin-top: 13px;
+}
+#cpanel div.icon span {
+	display: block;
+	padding-top: 3px;
+}
+
+/* Fieldsets */
+fieldset {
+	margin-bottom: 10px;
+	border: 1px #ccc solid;
+	padding: 5px;
+	text-align: left;
+}
+fieldset p {
+	margin: 10px 0px;
+}
+legend {
+	color: #c24733;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+table.paramlist td {
+	height: 30px;
+}
+div.footer {
+	clear: both;
+	margin-top: 10px;
+}
+.normaltext
+{
+    font-family:Segoe UI, Arial, sans-serif, Verdana, Tahoma, Helvetica;
+    font-size: 11px;
+}
+.toolbox
+{
+    font-size: 11px;
+    font-family:Segoe UI, Arial, sans-serif, Verdana, Tahoma, Helvetica;
+    background-color:#F1F3F5;
+    height:32px;
+    margin-bottom:5px;
+    padding-top:5px;
+    padding-left:5px;
+}
+
+table.advform
+{
+    background-color: #F0F0F0;
+    border: solid 1px #d5d5d5;
+    width: 980px;
+    border-collapse: collapse;
+    height: auto;
+    font-size: 11px;
+    font-family:Segoe UI, Arial, sans-serif, Verdana, Tahoma, Helvetica;
+}
+table.advform td {
+	padding: 2px 5px 2px 5px;
+	text-align: left;
+}
+table.advform td.title {
+	text-align:left;
+}
+table.advform td.editor {
+	font-size: 9px;
+}
+
+div.advform
+{
+    width: 1000px;
+    margin: 0px auto 0px auto;
+    font-family:Segoe UI, Arial, sans-serif, Verdana, Tahoma, Helvetica;
+    background-color: #F0F0F0;
+}
+
+div.tabpage
+{
+    font-family:Segoe UI, Arial, sans-serif, Verdana, Tahoma, Helvetica;
+    background-color: #fff;
+    min-height:500px;
+    font-size:11px;
+}
+.modalPopup {
+	background-color:#CFDDEE;
+	border-width:1px;
+	border-style:solid;
+	border-color:Gray;
+	padding:0px;
+	width:700px;
+	height:600px;
+}
+.clr
+{
+    clear:both;
+}
+
+.header
+{
+    background-color:#DDDDDD;
+}
+
+.MyTabStyle .ajax__tab_header
+{
+    font-family: Segoe UI , Arial, Sans-Serif;
+    font-size: 11px;
+    font-weight:bold;
+    display: block;
+    height:24px;
+}
+.MyTabStyle .ajax__tab_header .ajax__tab_outer
+{
+    border-color: #222;
+    color: #fff;
+    padding-left: 10px;
+    padding-top:2px;
+    margin-right: 3px;
+    border:solid 1px #d7d7d7;
+    background-color:#5a5a5a;
+    height:20px;
+}
+.MyTabStyle .ajax__tab_header .ajax__tab_inner
+{
+    border-color: #666;
+    color: #666;
+    padding: 3px 10px 2px 0px;
+}
+.MyTabStyle .ajax__tab_hover .ajax__tab_outer
+{
+    background-color:#CCCCCC;
+}
+.MyTabStyle .ajax__tab_hover .ajax__tab_inner
+{
+    color: #fff;
+}
+.MyTabStyle .ajax__tab_active .ajax__tab_outer
+{
+    background-color: #fff;
+}
+.MyTabStyle .ajax__tab_active .ajax__tab_inner
+{
+    color: #000;
+    border-color: #333;
+}
+
+.MyTabStyle .ajax__tab_body
+{
+    font-family:wf_SegoeUI, Segoe UI, Arial;
+    font-size: 12px;
+    background-color: #fff;
+    border-top-width: 0;
+    border: solid 1px #d7d7d7;
+    border-top-color: #ffffff;
+}
+
+.ImgDetail
+{
+    display: block;
+    width:120px;
+    height:130px;    
+    float:left;
+    margin-top:15px;
+    margin-left:15px;
+    background:#fff;
+}
+.MasterDescription
+{
+    font-family:wf_SegoeUI, Segoe UI, Arial;
+    font-size: 17px;    
+    font-weight:bold;
+}
+
+.ajax__colorPicker_container table td div {
+width: 10px;
+height: 11px;
+cursor: crosshair;
+padding:0px;
+}
+
+.modalBackground {
+	background-color:Gray;
+	filter:alpha(opacity=80);
+	opacity:0.8;
+}
+
+.modalPopup {
+	background-color:#fff;
+	border-width:1px;
+	border-style:solid;
+	border-color:Gray;
+	padding:3px;
+	width:450px;
+	height:300px;
+}
+.modalDiv 
+{  
+    position:absolute;  
+    z-index:10000;  
+    background-color:Gray;
+    filter:alpha(opacity=35);
+	opacity:0.35;
+    display:none;  
+    width:100%;
+    height:100%;
+    top:0px; 
+    left:0px;   
+}
+/* Modal div styles end */
+
+
+/* Panel styles start */
+.popup
+{
+    font-family: arial,helvetica,clean,sans-serif;
+    font-size: 12px;
+    padding: 0px;
+    display: block;
+    background-color:#F5F5F5;
+    border:2px solid #000;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 3px 10px rgba(0,0,0,.42);
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,0.42);
+    position: absolute;
+    z-index:1;
+}
+
+.container
+{
+    
+} 
+
+.popupheader
+{
+    padding:5px;
+    height:30px;
+    background-color:#7a7a7a;    
+    color:#fff;
+    border-top-left-radius: 7px 7px;
+    border-top-right-radius: 7px 7px;
+}

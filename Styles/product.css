@@ -1,0 +1,340 @@
+﻿.leftcontent
+{
+	width:195px;
+	padding:0px;
+	margin:0px;
+	margin-bottom:10px;
+}
+.rightcontent
+{
+	width:190px;
+	padding:0px;
+	margin:0px;
+	margin-bottom:10px;
+}
+.categorylink
+{
+    font-family: Arial, sans-serif, Verdana, Tahoma, Helvetica;
+    color: #000000;
+    height:24px;
+}
+
+.containerleft
+{
+    margin-bottom:9px;
+    padding-bottom:7px;
+}
+
+.containerright
+{
+    margin-bottom: 10px;
+    background-color:#fff;
+    min-height: 239px;
+}
+.containerright .itemsamprice
+{
+    padding:3px;
+}
+
+.item .p-info 
+{
+}
+
+.item .p-info .item_desc 
+{
+    height: 30px;
+    overflow: hidden;
+    margin-bottom: 3px;
+    color:#696969;
+    font-size:11px;
+    padding-left:5px;
+}
+.item .p-info .item_price
+{
+    height: 30px;
+    overflow: hidden;
+    display: block;
+    margin-bottom: 3px;
+}
+
+.sales_price
+{
+    font-size:15px;
+    font-weight:bold;
+    color:#ff0000;
+}
+
+.floatR 
+{
+    float: right;
+}
+.floatL
+{
+    float: left;
+}
+.clr
+{
+    clear:both;    
+}
+.itemgallery 
+{
+    width: 300px;
+    min-height:270px;
+    position: relative;
+    margin-top: 0px;
+}
+.itemgallery .showimg 
+{
+    width: 240px;
+    margin-top:30px;
+    text-align: center;
+}
+
+.itemgallery .listimgthumb 
+{
+    width: 200px;
+    height: 80px;
+    margin-top: 5px;
+}
+.iteminfo
+{
+    position: relative;
+    margin-top: 0px;
+    float:left;
+}
+.iteminfo .itemtitle
+{
+    font-family: Arial, sans-serif, Verdana, Tahoma, Helvetica;
+    font-size: 17px;
+    color: #666666;
+    font-weight: bold;
+    margin-top:7px;
+}
+
+.productname
+{
+    font-size: 20px;
+    color: #666666;
+    font-weight: bold;
+    margin-top:10px;
+    }
+
+.sameitemname
+{
+    height: 30px;
+    overflow:hidden;
+}
+.originprice
+{
+    text-decoration: line-through;
+    color: #000;
+}
+
+.gift
+{
+    border: 1px solid #FFAE1E;
+    font-family: Arial, sans-serif, Verdana, Tahoma, Helvetica;
+    min-height: 40px;
+    background-color: #FFF155;
+    padding:3px;
+}
+
+.gift .description
+{
+    margin: 5px;    
+}
+.row1
+{
+     background-color: #F9F9F9;
+}
+.row0
+{
+     background-color: #fff;
+}
+.features
+{
+    color: black;
+    padding: 5px;
+}
+.qty
+{
+    font-weight: bold;
+    text-align: right;
+}
+
+.inputbox 
+{
+    color: #444;
+    font-size: 12px;
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid #DDD;
+    background-color: white;
+}
+.center 
+{
+    text-align: center !important;
+}
+.right 
+{
+    text-align: right !important;
+}
+.bold
+{
+    font-weight: bold;
+}
+
+.buttonoutside
+{
+    background-image: url('../Images/Template/button.png');
+    background-repeat: no-repeat;
+    padding-top: 7px;
+    text-align: center;
+    font-weight: bold;
+    width: 112px;
+    height: 25px;
+    display: block;
+    color: #000000;
+}
+.PromotionsTitle
+{
+    color: #0854A6;
+    height: 20px;
+    padding-left:5px;
+    padding-top:5px;
+    font-weight: bold;
+    font-size:11px;
+}
+
+.PromotionsContent
+{
+    padding:5px;
+    font-size:11px;
+    color:#0854A6;
+}
+
+.ratingStar {
+    font-size: 0pt;
+    width: 13px;
+    height: 12px;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+    display: block;
+    background-repeat: no-repeat;
+}
+
+.filledRatingStar {
+    background-image: url(Images/FilledStar.png);
+
+}
+
+.emptyRatingStar {
+    background-image: url(Images/EmptyStar.png);
+}
+
+.savedRatingStar {
+    background-image: url(Images/SavedStar.png);
+}
+
+.samePriceItem
+{
+    padding:5px;
+}
+
+.samePriceItem a
+{
+    color:#777;
+    margin-bottom:5px;
+}
+
+.comment_author 
+{
+    margin-top:10px;
+    background: url("Images/coment_arrow.jpg") no-repeat scroll 25px bottom transparent;
+    position: relative;
+    height:30px;
+}
+
+.comment_text {
+border: 1px solid #CCCCCC;
+margin: -1px 0 0;
+padding: 10px;
+text-align: justify;
+}
+
+.catpromotionbox
+{
+    height:250px;
+    width:300px;
+    float:left;
+    margin-right:5px;
+}
+
+.catdealpricebox
+{
+	margin-top:10px;
+    height:260px;
+    float:right;
+    width:483px;
+}
+
+.catdealpricebox .product 
+{
+    width: 144px;
+    min-height: 200px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    float: left;
+    position:relative;
+}
+.catdealpricebox .product .p-image {
+    height: 100px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.catdealpricebox .product .product_title a:link, .catdealpricebox .product .product_title a:visited
+{
+    color:#696969;
+}
+
+.catdealpricebox .product .product_title
+{
+    line-height: 18px;
+    height: 35px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0px;
+    margin: 3px 0px;
+    overflow: hidden;
+}
+
+.newproduct
+{
+    position: absolute;
+    height: 30px;
+    width: 50px;
+    background: url("Images/new.png");
+    background-repeat: no-repeat;
+    right:0px;
+}
+
+.salesprice
+{
+    font-size:17px;
+    font-weight:bold;
+    color: #FA4B2A;
+}
+
+.salespriceprd
+{
+    font-size:20px;
+    font-weight:bold;
+    color: #FA4B2A;
+}
+
+.dealprice
+{
+    color: #FA4B2A;
+}
